@@ -18,8 +18,14 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.apache.groovy:groovy'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
     runtimeOnly 'com.h2database:h2'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.dbunit:dbunit:2.7.3'
+    implementation 'org.springframework:spock-core:2.4-M4-groovy-4.0'
+    implementation 'org.springframework:spock-spring:2.4-M4-groovy-4.0'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+
+
 }
 
 tasks.named('test') {
